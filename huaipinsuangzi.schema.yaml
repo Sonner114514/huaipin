@@ -1,9 +1,9 @@
-#1.0：測試運行
+# 1.1：添加了jd與zd、xd與sd的模糊音，默認取消，如果需要開啓，請刪去句首前面的“#”號。
 
 schema:
   schema_id: huaipinsuangzi
   name: 淮拼（雙字）
-  version: "1.0"        
+  version: "1.1"        
   author:
     - 三孕 <sanyunzhang61@gmail.com>
   description: |
@@ -67,6 +67,8 @@ speller:
   algebra:
     - derive/^n/l/                     # n => l，如不需要，請在行首加個#號
     - derive/^l/n/                     # l => n，如不需要，請在行首加個#號
+    #- derive/jd$/zd/                  # jai <=> zai，如不需要，請在行首加個#號
+    #- derive/xd$/sd/                  # xai <=> sai，如不需要，請在行首加個#號
 
 abc_segmentor:
   alphabet: abcdefghijklmnopqrstuvwxyz;[

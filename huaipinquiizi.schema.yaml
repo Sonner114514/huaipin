@@ -1,9 +1,10 @@
 # 1.1：添加了l與n、oh與ok的模糊音；如果不需要，可以取消。
+# 1.2：添加了jai與zai、xai與sai的模糊音，默認取消，如果需要開啓，請刪去句首前面的“#”號。
 
 schema:
   schema_id: huaipinquiizi  # 專有的方案標識
   name: 淮拼（全字）
-  version: "1.1"
+  version: "1.2"
   author:
     - 三孕 <sanyunzhang61@gmail.com>
   description: |
@@ -68,3 +69,5 @@ speller:
     - derive/^n/l/                     # n => l，如不需要，請在行首加個#號
     - derive/^l/n/                     # l => n，如不需要，請在行首加個#號
     - derive/ok$/oh/                   # ok <=> oh，如不需要，請在行首加個#號
+    #- derive/jai$/zai/                # jai <=> zai，如不需要，請在行首加個#號
+    #- derive/xai$/sai/                # xai <=> sai，如不需要，請在行首加個#號
